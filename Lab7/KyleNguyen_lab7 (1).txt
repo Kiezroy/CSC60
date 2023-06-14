@@ -1,0 +1,27 @@
+Script started on Mon 27 Mar 2023 03:44:12 PM PDT
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab7[?1034h[kyletnguyen@ecs-pa-coding1 lab7]$ touch lab7.h
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab7[kyletnguyen@ecs-pa-coding1 lab7]$ make
+gcc -c lab7.c -lm
+gcc -c get_data.c -lm 
+gcc -c print_all.c -lm
+gcc -c get_range_count.c -lm
+gcc lab7.o get_data.o print_all.o get_range_count.o -o range -lm
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab7[kyletnguyen@ecs-pa-coding1 lab7]$ ./range
+
+Kyle Nguyen.  Lab 7. 
+
+File lab7a.dat:  
+There are 12 values in the range of 90 through 99
+out of a total of 29 values.
+
+
+Kyle Nguyen.  Lab 7. 
+
+File lab7b.dat:  
+There are 10 values in the range of 90 through 99
+out of a total of 29 values.
+
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab7[kyletnguyen@ecs-pa-coding1 lab7]$ exit
+exit
+
+Script done on Mon 27 Mar 2023 03:48:26 PM PDT
