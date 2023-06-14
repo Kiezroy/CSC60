@@ -1,0 +1,151 @@
+Script started on Thu 11 May 2023 04:07:09 PM PDT
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab10[?1034h[kyletnguyen@ecs-pa-coding1 lab10]$ toc=[K[Kuch lb[Kab9+[K_10.h
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab10[kyletnguyen@ecs-pa-coding1 lab10]$ make
+gcc -c lab10.c
+gcc -c ParseCmd.c
+gcc -c ProcessExtCmd.c
+gcc -c Redirect.c
+gcc -c RunExtCmd.c
+gcc lab10.o ParseCmd.o ProcessExtCmd.o Redirect.o RunExtCmd.o -o lab10
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab10[kyletnguyen@ecs-pa-coding1 lab10]$ ./lab10
+
+csc60msh> ls >ls   slo   lsout
+Argc = 3 
+Argv 0 = ls 
+Argv 1 = > 
+Argv 2 = lsout 
+Child returned status: 0
+
+
+csc60msh> cat lsout
+Argc = 2 
+Argv 0 = cat 
+Argv 1 = lsout 
+lab10
+lab10.c
+lab10.o
+lab10.txt
+lab9_10.h
+lsout
+makefile
+ParseCmd.c
+ParseCmd.o
+ProcessExtCmd.c
+ProcessExtCmd.o
+Redirect.c
+Redirect.o
+RunExtCmd.c
+RunExtCmd.o
+Child returned status: 0
+
+
+csc60msh> ls > lsout > file1
+Argc = 5 
+Argv 0 = ls 
+Argv 1 = > 
+Argv 2 = lsout 
+Argv 3 = > 
+Argv 4 = file1 
+Cannot output to more than one file.
+Child returned status: 256
+
+
+csc60msh> cat foo.txt
+Argc = 2 
+Argv 0 = cat 
+Argv 1 = foo.txt 
+cat: foo.txt: No such file or directory
+Child returned status: 256
+
+
+csc60msh> >lsout
+Argc = 1 
+Argv 0 = >lsout 
+Error on the exec call
+Child returned status: 256
+
+
+csc60msh> <lsout
+Argc = 1 
+Argv 0 = <lsout 
+Error on the exec call
+Child returned status: 256
+
+
+csc60msh> wc < lsout
+Argc = 3 
+Argv 0 = wc 
+Argv 1 = < 
+Argv 2 = lsout 
+ 15  15 157
+Child returned status: 0
+
+
+csc60msh> wc < lsout > wout   cout
+Argc = 5 
+Argv 0 = wc 
+Argv 1 = < 
+Argv 2 = lsout 
+Argv 3 = > 
+Argv 4 = wcout 
+Child returned status: 0
+
+
+csc60msh> cat wcout
+Argc = 2 
+Argv 0 = cat 
+Argv 1 = wcout 
+ 15  15 157
+Child returned status: 0
+
+
+csc60msh> wc < lsout < wcout
+Argc = 5 
+Argv 0 = wc 
+Argv 1 = < 
+Argv 2 = lsout 
+Argv 3 = < 
+Argv 4 = wcout 
+Cannot input from more than one file.
+Child returned status: 256
+
+
+csc60msh> cd ../lab2
+Argc = 2 
+Argv 0 = cd 
+Argv 1 = ../lab2 
+
+csc60msh> pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/kyletnguyen/csc60/lab2
+
+csc60msh> gcc lab2.c
+Argc = 2 
+Argv 0 = gcc 
+Argv 1 = lab2.c 
+Child returned status: 0
+
+
+csc60msh> ./a.out
+Argc = 1 
+Argv 0 = ./a.out 
+
+Lab 2. 
+
+Hello World!
+Hi, Kyle Nguyen. 
+
+These Things We Do, That Others May Live
+- United States Air Force Pararescue
+
+Child returned status: 0
+
+
+csc60msh> exit
+Argc = 1 
+Argv 0 = exit 
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab10[kyletnguyen@ecs-pa-coding1 lab10]$ exit
+exit
+
+Script done on Thu 11 May 2023 04:09:26 PM PDT
