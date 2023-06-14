@@ -1,0 +1,50 @@
+Script started on Thu 11 May 2023 04:13:41 PM PDT
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab9[?1034h[kyletnguyen@ecs-pa-coding1 lab9]$ touch lab9_10.h
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab9[kyletnguyen@ecs-pa-coding1 lab9]$ make
+gcc -c lab9.c -Wall
+gcc -c ParseCmd.c -Wall
+gcc lab9.o ParseCmd.o -o lab9 -Wall
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab9[kyletnguyen@ecs-pa-coding1 lab9]$ ./lab9
+
+csc60msh> 
+Argc = 0 
+
+csc60msh>  
+Argc = 0 
+
+csc60msh> pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/kyletnguyen/csc60/lab9
+
+csc60msh> cd ..
+Argc = 2 
+Argv 0 = cd 
+Argv 1 = .. 
+
+csc60msh> cd lab9
+Argc = 2 
+Argv 0 = cd 
+Argv 1 = lab9 
+
+csc60msh> pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/kyletnguyen/csc60/lab9
+
+csc60msh> cd
+Argc = 1 
+Argv 0 = cd 
+
+csc60msh> pwd
+Argc = 1 
+Argv 0 = pwd 
+/home/student/kyletnguyen
+
+csc60msh> exit
+Argc = 1 
+Argv 0 = exit 
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab9[kyletnguyen@ecs-pa-coding1 lab9]$ exit
+exit
+
+Script done on Thu 11 May 2023 04:15:47 PM PDT
