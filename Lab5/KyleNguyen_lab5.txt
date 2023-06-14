@@ -1,0 +1,21 @@
+Script started on Wed 08 Mar 2023 07:34:43 PM PST
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab5[?1034h[kyletnguyen@ecs-pa-coding1 lab5]$ gcc lab5.c
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab5[kyletnguyen@ecs-pa-coding1 lab5]$ ./a.out
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab5[kyletnguyen@ecs-pa-coding1 lab5]$ cat lab5.txt
+
+Kyle Nguyen.  Lab 5. 
+
+Data on Parabolas 
+
+ Length      Depth        Area   
+--------   ---------   --------- 
+  12.60     24.80      208.320
+   5.60      7.80       29.120
+   7.85     12.61       65.992
+   8.90      4.70       27.887
+
+
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab5[kyletnguyen@ecs-pa-coding1 lab5]$ exit
+exit
+
+Script done on Wed 08 Mar 2023 07:37:02 PM PST
