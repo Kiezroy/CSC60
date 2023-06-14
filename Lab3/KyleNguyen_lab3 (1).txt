@@ -1,0 +1,177 @@
+Script started on Tue 21 Feb 2023 09:00:04 AM PST
+]0;kyletnguyen@ecs-pa-coding1:~[?1034h[kyletnguyen@ecs-pa-coding1 ~]$ history -c
+]0;kyletnguyen@ecs-pa-coding1:~[kyletnguyen@ecs-pa-coding1 ~]$ cd csc60
+]0;kyletnguyen@ecs-pa-coding1:~/csc60[kyletnguyen@ecs-pa-coding1 csc60]$ mkdir lab3
+]0;kyletnguyen@ecs-pa-coding1:~/csc60[kyletnguyen@ecs-pa-coding1 csc60]$ cd lab3
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ pwd
+/home/student/kyletnguyen/csc60/lab3
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ mkdir aaa
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ cd aaa
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ pwd
+/home/student/kyletnguyen/csc60/lab3/aaa
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ cd ..
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ pwd
+/home/student/kyletnguyen/csc60/lab3
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ ls > file1
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ cat file1
+aaa
+file1
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ less file1
+[?1049h[?1h=aaa
+file1
+[7mfile1 (END)[27m[K[K[?1l>[?1049l]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ grep file file1
+[01;31m[Kfile[m[K1
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ grep lab file1
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ cp file file2
+cp: cannot stat ‘file’: No such file or directory
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ cp file1 file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ ls
+[0m[01;34maaa[0m  file1  file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ cd aaa
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ pwd
+/home/student/kyletnguyen/csc60/lab3/aaa
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ cp ../file1 .
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ ls
+file1
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ mv file1 file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ ls
+file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ mv ../file1 .
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ cd ..
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ ls
+[0m[01;34maaa[0m  file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ cd aaa
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ ls
+file1  file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ cmp file1 file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ ls > aaalist
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ cmp file1 aaalist
+file1 aaalist differ: byte 4, line 1
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ diff file1 aaalist
+1c1
+< aaa
+---
+> aaalist
+2a3
+> file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ rm -i file1
+rm: remove regular file ‘file1’? y
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ ls
+aaalist  file2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+kyletng+  4238  0.0  0.0 126592  2444 pts/3    Ss   08:59   0:00 -bash
+kyletng+  4328  0.0  0.0 114300   824 pts/3    S+   09:00   0:00 script KyleNguyen_lab3.txt
+kyletng+  4330  0.0  0.0 114308   400 pts/3    S+   09:00   0:00 script KyleNguyen_lab3.txt
+kyletng+  4331  0.0  0.0 126660  2460 pts/4    Ss   09:00   0:00 bash -i
+kyletng+  4427  0.0  0.0 166156  1956 pts/4    R+   09:05   0:00 ps u
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 85194240 4331 4330  0 80   0 - 31665 do_wai pts/4    00:00:00 bash
+0 R 85194240 4428 4331  0 80   0 - 38332 -      pts/4    00:00:00 ps
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S 85194240 4331 4330  0 80   0 - 31665 do_wai pts/4    00:00:00 bash
+0 R 85194240 4429 4331  0 80   0 - 38332 -      pts/4    00:00:00 ps
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3/aaa[kyletnguyen@ecs-pa-coding1 aaa]$ cd ..
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab3[kyletnguyen@ecs-pa-coding1 lab3]$ cd ..
+]0;kyletnguyen@ecs-pa-coding1:~/csc60[kyletnguyen@ecs-pa-coding1 csc60]$ pwd
+/home/student/kyletnguyen/csc60
+]0;kyletnguyen@ecs-pa-coding1:~/csc60[kyletnguyen@ecs-pa-coding1 csc60]$ cd lab2
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab2[kyletnguyen@ecs-pa-coding1 lab2]$ head lab2.c
+/*-------------------*/
+/*Kyle Nguyen        */
+/*Lab 2              */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+
+    printf("\nLab 2. \n\n");
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab2[kyletnguyen@ecs-pa-coding1 lab2]$ head -20 lab2.c
+/*-------------------*/
+/*Kyle Nguyen        */
+/*Lab 2              */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+
+    printf("\nLab 2. \n\n");
+    printf("Hello World!\n");
+    printf("Hi, Kyle Nguyen. \n");
+    printf("\nThese Things We Do, That Others May Live\n");
+    printf("- United States Air Force Pararescue\n\n");
+
+    return EXIT_SUCCESS;
+}
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab2[kyletnguyen@ecs-pa-coding1 lab2]$ tail lab2.c
+int main(void){
+
+    printf("\nLab 2. \n\n");
+    printf("Hello World!\n");
+    printf("Hi, Kyle Nguyen. \n");
+    printf("\nThese Things We Do, That Others May Live\n");
+    printf("- United States Air Force Pararescue\n\n");
+
+    return EXIT_SUCCESS;
+}
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab2[kyletnguyen@ecs-pa-coding1 lab2]$ ls -al \[K| less
+[?1049h[?1h=total 28
+drwxr-xr-x 2 kyletnguyen domain users 4096 Feb 14 12:23 .
+drwxr-xr-x 4 kyletnguyen domain users 4096 Feb 21 09:00 ..
+-rwxr-xr-x 1 kyletnguyen domain users 8360 Feb 14 12:13 a.out
+-rw-r--r-- 1 kyletnguyen domain users  506 Feb 14 12:14 KyleNguyen_lab2.txt
+-rw-r--r-- 1 kyletnguyen domain users  368 Feb 14 12:13 lab2.c
+[7m(END)[27m[K[K[?1l>[?1049l]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab2[kyletnguyen@ecs-pa-coding1 lab2]$ history
+    1  2023-02-21 09:00:17 cd csc60
+    2  2023-02-21 09:00:24 mkdir lab3
+    3  2023-02-21 09:00:31 cd lab3
+    4  2023-02-21 09:00:34 pwd
+    5  2023-02-21 09:00:39 mkdir aaa
+    6  2023-02-21 09:00:42 cd aaa
+    7  2023-02-21 09:00:44 pwd
+    8  2023-02-21 09:00:48 cd ..
+    9  2023-02-21 09:00:51 pwd
+   10  2023-02-21 09:01:17 ls > file1
+   11  2023-02-21 09:01:24 cat file1
+   12  2023-02-21 09:01:34 less file1
+   13  2023-02-21 09:01:46 grep file file1
+   14  2023-02-21 09:02:57 grep lab file1
+   15  2023-02-21 09:03:09 cp file file2
+   16  2023-02-21 09:03:16 cp file1 file2
+   17  2023-02-21 09:03:20 ls
+   18  2023-02-21 09:03:24 cd aaa
+   19  2023-02-21 09:03:26 pwd
+   20  2023-02-21 09:03:49 cp ../file1 .
+   21  2023-02-21 09:03:50 ls
+   22  2023-02-21 09:03:58 mv file1 file2
+   23  2023-02-21 09:04:01 ls
+   24  2023-02-21 09:04:10 mv ../file1 .
+   25  2023-02-21 09:04:18 cd ..
+   26  2023-02-21 09:04:21 ls
+   27  2023-02-21 09:04:25 cd aaa
+   28  2023-02-21 09:04:27 ls
+   29  2023-02-21 09:04:34 cmp file1 file2
+   30  2023-02-21 09:04:43 ls > aaalist
+   31  2023-02-21 09:04:49 cmp file1 aaalist
+   32  2023-02-21 09:04:59 diff file1 aaalist
+   33  2023-02-21 09:05:07 rm -i file1
+   34  2023-02-21 09:05:22 ls
+   35  2023-02-21 09:05:32 ps u
+   36  2023-02-21 09:05:39 ps -l
+   37  2023-02-21 09:05:46 cd ..
+   38  2023-02-21 09:05:52 pwd
+   39  2023-02-21 09:06:05 cd lab2
+   40  2023-02-21 09:06:09 head lab2.c
+   41  2023-02-21 09:06:19 head -20 lab2.c
+   42  2023-02-21 09:06:44 tail lab2.c
+   43  2023-02-21 09:07:04 ls -al | less
+   44  2023-02-21 09:07:10 history
+]0;kyletnguyen@ecs-pa-coding1:~/csc60/lab2[kyletnguyen@ecs-pa-coding1 lab2]$ exit
+exit
+
+Script done on Tue 21 Feb 2023 09:07:14 AM PST
