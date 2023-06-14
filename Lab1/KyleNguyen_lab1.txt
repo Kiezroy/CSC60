@@ -1,0 +1,14 @@
+Script started on Thu 09 Feb 2023 12:01:12 PM PST
+]0;kyletnguyen@ecs-pa-coding1:~[?1034h[kyletnguyen@ecs-pa-coding1 ~]$ cat .vimrc
+"Kyle Nguyen
+
+:set tabstop=4
+:set shiftwidth=4
+:set smartindent
+:set expandtab
+:set number
+:set background=dark
+]0;kyletnguyen@ecs-pa-coding1:~[kyletnguyen@ecs-pa-coding1 ~]$ exit
+exit
+
+Script done on Thu 09 Feb 2023 12:01:28 PM PST
